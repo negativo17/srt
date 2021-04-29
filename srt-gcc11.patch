@@ -1,0 +1,158 @@
+diff --git a/srtcore/api.cpp b/srtcore/api.cpp
+index b61b720..0302d41 100644
+--- a/srtcore/api.cpp
++++ b/srtcore/api.cpp
+@@ -59,6 +59,7 @@ modified by
+ #include <vector>
+ 
+ #include <cstring>
++#include <limits>
+ #include "utilities.h"
+ #include "netinet_any.h"
+ #include "api.h"
+diff --git a/srtcore/cache.cpp b/srtcore/cache.cpp
+index 56d327c..388fe45 100644
+--- a/srtcore/cache.cpp
++++ b/srtcore/cache.cpp
+@@ -42,6 +42,8 @@ written by
+ #include "platform_sys.h"
+ 
+ #include <cstring>
++#include <limits>
++
+ #include "cache.h"
+ #include "core.h"
+ 
+diff --git a/srtcore/channel.cpp b/srtcore/channel.cpp
+index 3473e75..6821912 100644
+--- a/srtcore/channel.cpp
++++ b/srtcore/channel.cpp
+@@ -56,6 +56,7 @@ modified by
+ #include <iomanip> // Logging 
+ #include <srt_compat.h>
+ #include <csignal>
++#include <limits>
+ 
+ #include "channel.h"
+ #include "core.h" // srt_logging:kmlog
+diff --git a/srtcore/crypto.cpp b/srtcore/crypto.cpp
+index 4c6c02b..74978d5 100644
+--- a/srtcore/crypto.cpp
++++ b/srtcore/crypto.cpp
+@@ -19,6 +19,7 @@ written by
+ #include <string>
+ #include <sstream>
+ #include <iterator>
++#include <limits>
+ 
+ #include "udt.h"
+ #include "utilities.h"
+diff --git a/srtcore/epoll.cpp b/srtcore/epoll.cpp
+index 80302b6..ecd7673 100644
+--- a/srtcore/epoll.cpp
++++ b/srtcore/epoll.cpp
+@@ -57,6 +57,7 @@ modified by
+ #include <cerrno>
+ #include <cstring>
+ #include <iterator>
++#include <limits>
+ 
+ #include "common.h"
+ #include "epoll.h"
+diff --git a/srtcore/fec.cpp b/srtcore/fec.cpp
+index ba26626..ceb409a 100644
+--- a/srtcore/fec.cpp
++++ b/srtcore/fec.cpp
+@@ -13,6 +13,7 @@
+ #include <map>
+ #include <vector>
+ #include <deque>
++#include <limits>
+ 
+ #include "packetfilter.h"
+ #include "core.h"
+diff --git a/srtcore/handshake.cpp b/srtcore/handshake.cpp
+index e3726ea..1209e9a 100644
+--- a/srtcore/handshake.cpp
++++ b/srtcore/handshake.cpp
+@@ -50,6 +50,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #include <sstream>
+ #include <iterator>
+ #include <algorithm>
++#include <limits>
+ 
+ #include "udt.h"
+ #include "core.h"
+diff --git a/srtcore/list.cpp b/srtcore/list.cpp
+index a2ef993..3479a5a 100644
+--- a/srtcore/list.cpp
++++ b/srtcore/list.cpp
+@@ -50,6 +50,8 @@ modified by
+    Haivision Systems Inc.
+ *****************************************************************************/
+ 
++#include <limits>
++
+ #include "platform_sys.h"
+ 
+ #include "list.h"
+diff --git a/srtcore/logging.h b/srtcore/logging.h
+index bfdfb37..29f6699 100644
+--- a/srtcore/logging.h
++++ b/srtcore/logging.h
+@@ -17,6 +17,7 @@ written by
+ #define INC_SRT_LOGGING_H
+ 
+ 
++#include <limits>
+ #include <iostream>
+ #include <iomanip>
+ #include <set>
+diff --git a/srtcore/packet.cpp b/srtcore/packet.cpp
+index 5b8bada..c10ba76 100644
+--- a/srtcore/packet.cpp
++++ b/srtcore/packet.cpp
+@@ -162,6 +162,7 @@ modified by
+ #include "platform_sys.h"
+ 
+ #include <cstring>
++#include <limits>
+ #include "packet.h"
+ #include "handshake.h"
+ #include "logging.h"
+diff --git a/srtcore/packetfilter.cpp b/srtcore/packetfilter.cpp
+index 85fc584..c3ff91b 100644
+--- a/srtcore/packetfilter.cpp
++++ b/srtcore/packetfilter.cpp
+@@ -14,6 +14,7 @@
+ #include <vector>
+ #include <deque>
+ #include <iterator>
++#include <limits>
+ 
+ #include "packetfilter.h"
+ #include "packetfilter_builtin.h"
+diff --git a/srtcore/queue.cpp b/srtcore/queue.cpp
+index 3f9cdf0..6ca2d0d 100644
+--- a/srtcore/queue.cpp
++++ b/srtcore/queue.cpp
+@@ -53,6 +53,7 @@ modified by
+ #include "platform_sys.h"
+ 
+ #include <cstring>
++#include <limits>
+ 
+ #include "common.h"
+ #include "api.h"
+diff --git a/srtcore/srt_c_api.cpp b/srtcore/srt_c_api.cpp
+index 1763198..a894f51 100644
+--- a/srtcore/srt_c_api.cpp
++++ b/srtcore/srt_c_api.cpp
+@@ -17,6 +17,7 @@ written by
+ 
+ #include <iterator>
+ #include <fstream>
++#include <limits>
+ #include "srt.h"
+ #include "common.h"
+ #include "packet.h"
